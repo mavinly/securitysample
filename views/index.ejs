@@ -7,13 +7,9 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
     <script src="javascripts/securityApp.js"></script>
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    
- <script type="text/ng-template" id="/login.html">
+  <body ng-app='securitySample'>
     <div class="page-header">
-        <h1>Flapper News</h1>
+        <h1>Security Sample</h1>
     </div>
 
     <div ng-show="error" class="alert alert-danger row">
@@ -30,8 +26,6 @@
             <input type="password" class="form-control" placeholder="Password" ng-model="user.password"></input>
         </div>
         <button type="submit" class="btn btn-primary">Log In</button>
-    </form>
-</script>
-    
+    </form>    
   </body>
 </html>
