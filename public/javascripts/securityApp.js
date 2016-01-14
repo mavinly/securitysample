@@ -76,11 +76,17 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             url: '/home',
             templateUrl: '/home.html',
             controller: 'AuthCtrl',
-            resolve: {
-                Promise: ['readings', function (readings) {
-                    return readings.getAll();
-                }]
-            }
+            // resolve: {
+            //     Promise: ['readings', function (readings) {
+            //         return readings.getAll();
+            //     }]
+            // }
+        })
+        
+        .state('secure', {
+            url: '/secure',
+            templateUrl: '/secure.html',
+            controller: 'AuthCtrl'
         })
 
         .state('login', {
