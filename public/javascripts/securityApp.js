@@ -52,6 +52,7 @@ app.controller('AuthCtrl', [
         $scope.user = {};
         $scope.currentUser = auth.currentUser;
         $scope.logOut = auth.logOut;
+        $scope.hello = "Hello World";
         
         $scope.register = function () {
             auth.register($scope.user).error(function (error) {

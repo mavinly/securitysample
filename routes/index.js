@@ -47,7 +47,7 @@ router.post('/register', function(req, res, next){
 });
 
 router.post('/secure', auth, function(req, res, next){
-    
+    res.json("Hello Server");
 })
 
 module.exports = router;
